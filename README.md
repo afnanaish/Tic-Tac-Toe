@@ -5,22 +5,22 @@ Tic-Tac-Toe is a classic paper-and-pencil game played by two players, traditiona
 steps :
  When you run the game  the  'implementBord()' function it will be called then the 3*3bord will display with 9 positions and the numbers of each position .
 
-                                                                     { stp-1 using 'playWithAi()' function}
+                                             { stp-1 using 'playWithAi()' function}
 1. First, the question is asked, “2 players or 1 player?”           
 
     case-One: If he chooses 2
-                                                                 { steps-2&3  using 'chosePlayer();'function }
+                                             { steps-2&3  using 'chosePlayer();'function }
 2. The question is: “Play with x or o.”                            
 3. If he enters other than these two letters, it will print “Enter only x or o!”, The step 2 & 3 is repeated until x or o is entered   (by calling the same function 'chosePlayer();' another time)
 
-                                                                 {  steps 4-10  inside  play_turn (); function }
+                                         {  steps 4-10  inside  play_turn (); function }
 4. If user enter x , “Enter an available position number for X-player" and  “Enter an available position number for O-player" if he chose O .
-                                                               {steps 5-7 checkValidateInput() function }
+                                                        checkValidateInput() function }
 5. After a number is entered, it is checked whether the number is available from the positions (initially all numbers 1-9 are available).          
 6. If the number is not available, “Enter the number of one of the available positions” message will be printed, then steps 5 and 6 will be repeated until he entered an available .
 7. If a number is entered from the available positions, the player code will be display on this position, the position number will be deleted from the list of available position numbers (List <int> availableLoc), and the (fullLocations variable) will be incremented by one.
 
-                                                                              {check_patterns() function }
+                                                      {check_patterns() function }
 8. It is checked if one of the winning patterns is achieved for one of the players.
      A - If verified, the name of the winning player will be printed and the user will be asked if he wants to play again. Enter the letter “A”.
           A-1- If you enter the letter A, the steps will be repeated from the beginning (Step 1)
