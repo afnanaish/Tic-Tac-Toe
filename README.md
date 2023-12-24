@@ -29,7 +29,7 @@ steps :
 
 9. - It will be checked if fullLocations = 9 (since it has reached this step, of course, none of the players will have achieved any winning pattern) and therefore “No one won” will be printed. “If you want to restart the game, enter A.” { playAgain(); function}
 
-                                                                                     {calling play_turn();}
+                                                            {calling play_turn();}
 10. - If (fullLocations = 9) does not become, then the steps from step 2 will be repeated 
 
 
